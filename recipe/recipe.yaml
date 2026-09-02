@@ -32,7 +32,9 @@ tests:
       imports:
         - pysher
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}
+        - "*"
 
 about:
   summary: Pusher websocket client for python, based on Erik Kulyk's PythonPusherClient
